@@ -79,6 +79,7 @@ function get_max_direction(location){
 function show_q_learning(){
     IsShowing = true;
     AllowedMenu = false;
+    IsPlaying = false;
     document.getElementById('Menu').style.visibility = "hidden";
 
     interval = setInterval(()=>{
@@ -110,6 +111,7 @@ function show_q_learning(){
                 alert("Goal!");
                 IsShowing = false;
                 AllowedMenu = true;
+                IsPlaying = true;
                 break;
         }
         AILocation = move(AILocation, MaxGlobalDirection, status);
