@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            QLearning - Forzen Lake
+        </title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js"></script>
+        <script src="./js/FrozenLake.js"></script>
+        <script src="./js/functions.js"></script>
+        <script src="./js/drawing.js"></script>
+        <script src="./js/eventListener.js"></script>
+        <script src="./js/DOMcontroller.js"></script>
+        <script src="./js/QLearning.js"></script>
+    </head>
+    <body onload="init(10);">
+        <div id="MenuButton" onclick="ClickMenuButton();">
+            Menu
+        </div>
+        <div id="Menu" style="visibility: hidden;">
+            <label for="Lake Size">LakeSize</label>
+            <input type="range" name="LakeSize" id="LakeSizeRange" min="2" max="50">
+            <input type="number" name="LakeSize" id="LakeSizeNumber" min="2" max="50" style="width: 40px;">
+
+            <br>
+
+            <label for="Is Vail">Is Vailed</label>
+            <label for="IsVailRadioT" style="float: none; padding-right: 0px; margin-right: 0px;">True</label>
+            <input type="radio" name="IsVail" id="IsVailRadioT" value="True" checked>
+             | 
+            <label for="IsVailRadioF" style="float: none; padding-right: 0px; margin-right: 0px;">False</label>
+            <input type="radio" name="IsVail" id="IsVailRadioF" value="False">
+
+            <br>
+
+            <label for="Epochs">Epochs</label>
+            <input type="range" name="Epochs" id="EpochsRange" min="0" max="1000000">
+            <input type="number" name="Epochs" id="EpochsNumber" min="0" max="1000000" style="width: 60px;">
+            
+            <br>
+
+            <label for="Start Q Learning">Start Q Learning</label>
+            <input type="button" value="Start" style="margin: 5px 0 0 0; padding: 0 0 0 0; width: 50px; text-align: center;" onclick="ClickStartLearningButton();">
+            
+            <br>
+
+            <label for="Show Q Learning">Show Q Learning</label>
+            <input type="button" value="Show" style="margin: 5px 0 0 0; padding: 0 0 0 0; width: 50px; text-align: center;" onclick="show_q_learning();">
+        </div>
+    </body>
+</html>

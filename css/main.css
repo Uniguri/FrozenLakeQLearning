@@ -1,0 +1,30 @@
+#MenuButton {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    font-size: large;
+    margin: 0 0 0 0;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+#Menu {
+    position: absolute;
+    top: 50px;
+    color: white;
+    z-index: 1;
+    font-size: large;
+    margin: 0 0 0 0;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: black;
+}
+label{
+    padding-right: 10px;
+    float: left;
+}
