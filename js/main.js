@@ -19,6 +19,8 @@ function init(LS) {
     knownMap[0][0] = 1;
     knownMap[lakeNumber-1][lakeNumber-1] = 1;
     
+    playerLocation = [0, 0];
+
     initDraw();
     initMenu(lakeNumber, Epochs);
 }
